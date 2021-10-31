@@ -5,3 +5,5 @@ var fileNames = [
 
 var fileNameEntry = 'src/js/EDI.json';
 
+var domain = '';
+var fileRelativePath = '';

@@ -1,4 +1,4 @@
-console.log('indexjs loading...');
+console.log('index.js loading...');
 
 $(function () {
     console.log("ready!");
@@ -11,7 +11,6 @@ init();
 
 function init() {
     loadFileName();
-    // loadFiles();// TODO:
     selectListener();
 }
 
@@ -19,14 +18,13 @@ function loadFileName() {
     if (fileNames && fileNames.length > 0) {
         console.log('fileNames', fileNames);
         for (var file of fileNames) {
-            console.log('fileName', file)
-            $('#select1').append($('<option>', {
+            console.log('fileName', file);
+            $('#file-selector').append($('<option>', {
                 value: file,
                 text: file
             }));
-            // console.log('fileName', file, 'inserted')
         }
-        readFile();
+        // readFile();
     } else {
         // TODO: error alert
     }
@@ -35,7 +33,7 @@ function loadFileName() {
 function readFile(selectedFile) {
     clearSelect();
     var json = selectedFile || 'EDI.json';
-    $.getJSON('src/js/'+json, function (data) {
+    $.getJSON('src/js/' + json, function (data) {
         console.log('loadFiles', data)
         lays = data;
         for (var lay in data) {
@@ -81,9 +79,9 @@ function readFile(selectedFile) {
 }
 
 function selectListener() {
-    $('#select1').on('change', function (el) {
+    $('#file-selector').on('change', function (el) {
         // console.log('el', el)
-        var selectedFile = $('#select1').val();
+        var selectedFile = $('#file-selector').val();
         console.log('selectedFile', selectedFile)
         readFile(selectedFile);
     });

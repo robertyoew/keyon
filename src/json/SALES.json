@@ -1,5 +1,5 @@
 {
-  "1": [
+  "one": [
     {
       "SCHEMA": "STG_SCHEMA1------",
       "TABLE": "STG_TABLE1"
@@ -13,7 +13,7 @@
       "TABLE": "TD_TABLE1"
     }
   ],
-  "2": [
+  "two": [
     {
       "SCHEMA": "STG_SCHEMA2------",
       "TABLE": "STG_TABLE2"
@@ -24,7 +24,7 @@
       "TABLE": "TD_TABLE2"
     }
   ],
-  "3": [
+  "three": [
     {
       "SCHEMA": "STG_SCHEMA3,5------",
       "TABLE": [

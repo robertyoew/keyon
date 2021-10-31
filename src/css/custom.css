@@ -14,7 +14,7 @@ html {
 
 select {
     width: var(--selector-width);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .container {

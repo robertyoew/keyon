@@ -34,5 +34,16 @@
       "TABLE": "ODS_TABLE3"
     },
     {}
+  ],
+  "4": [
+    {
+      "SCHEMA": "STG_SCHEMA3",
+      "TABLE": "STG_TABLE3"
+    },
+    {
+      "SCHEMA": "ODS_SCHEMA3",
+      "TABLE": "ODS_TABLE3"
+    },
+    {}
   ]
 }

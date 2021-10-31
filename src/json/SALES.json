@@ -1,5 +1,5 @@
 {
-  "1": [
+  "one": [
     {
       "SCHEMA": "STG_SCHEMA1------",
       "TABLE": "STG_TABLE1"
@@ -13,7 +13,7 @@
       "TABLE": "TD_TABLE1"
     }
   ],
-  "2": [
+  "two": [
     {
       "SCHEMA": "STG_SCHEMA2------",
       "TABLE": "STG_TABLE2"
@@ -24,15 +24,25 @@
       "TABLE": "TD_TABLE2"
     }
   ],
-  "3": [
+  "three": [
     {
-      "SCHEMA": "STG_SCHEMA3------",
-      "TABLE": "STG_TABLE3"
+      "SCHEMA": "STG_SCHEMA3,5------",
+      "TABLE": [
+        "STG_TABLE3",
+        "STG_TABLE5"
+      ]
     },
     {
       "SCHEMA": "ODS_SCHEMA3------",
       "TABLE": "ODS_TABLE3"
     },
-    {}
+    {
+      "SCHEMA": "TD_SCHEMA345------",
+      "TABLE": [
+        "TD_TABLE3",
+        "TD_TABLE4",
+        "TD_TABLE5"
+      ]
+    }
   ]
 }

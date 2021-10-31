@@ -4,42 +4,48 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/base.css?a=1">
+    <link rel="stylesheet" href="src/css/custom.css?a=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 </head>
 <body>
 <div class="container">
     <!--  file selector  -->
-    <div>
+    <div class="row">
+        <span>Data Model <span class="red">*</span></span>
         <select id="file-selector">
-            <option disabled selected>plz select file</option>
+            <option disabled selected>Please select file</option>
         </select>
     </div>
-    <hr>
     <!--  STG  -->
-    <div>
+    <div class="row">
+        <span>Lay 1</span>
         <select id="select2">
-            <option disabled selected>plz select</option>
+            <option disabled selected>Please select</option>
         </select>
     </div>
-    <hr>
     <!--  ODS  -->
-    <div>
+    <div class="row">
+        <span>Lay 2</span>
         <select id="select3">
-            <option disabled selected>plz select</option>
+            <option disabled selected>Please select</option>
         </select>
     </div>
-    <hr>
     <!--  TD  -->
-    <div>
+    <div class="row">
+        <span>Lay 3</span>
         <select id="select4">
-            <option disabled selected>plz select</option>
+            <option disabled selected>Please select</option>
         </select>
     </div>
 
-    <h5 id="result"></h5>
+    <div class="result-row">
+        <p id="result" class="hidden"></p>
+        <div id="results">
+        </div>
+    </div>
 
-    <script src="src/js/variables.js"></script>
+    <script src="src/js/variables.js?a=1"></script>
     <script src="src/js/index.js?a=b"></script>
 </div>
 </body>

@@ -1,9 +1,12 @@
 console.log('variables.js loading...');
 
-var fileNames = [
+var sourceFileNamesArr = [
     'EDI.json',
     'SALES.json'
 ];
 
 var domain = '';
-var fileRelativePath = '';
+var fileRelativePath = 'src/json/';
+
+var separator = ' 👉 ';
+var layerSelectorText = 'Please Select';

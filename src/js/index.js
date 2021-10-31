@@ -21,7 +21,7 @@ function loadFileName() {
             console.log('fileName', file);
             $('#file-selector').append($('<option>', {
                 value: file,
-                text: file
+                text: file.replace('.json','')
             }));
         }
         // readFile();
